@@ -146,5 +146,6 @@ int main()
 	decoded_text = huffman_codec.decode(encoded_text, ch_to_code_map);
 	std::cout << "解码后的文本是: " << decoded_text << std::endl;
 
+	getchar();
 	return 0;
 }
