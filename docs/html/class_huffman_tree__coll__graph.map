@@ -1,0 +1,6 @@
+<map id="HuffmanTree" name="HuffmanTree">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,309,156,528"/>
+<area shape="rect" id="Node000002" href="$class_huffman_tree_node.html" title=" " alt="" coords="8,5,154,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,245,84,292,78,292,78,245"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="155,96,173,106,180,125,178,138,171,147,167,144,173,136,175,126,169,109,152,100"/>
+</map>

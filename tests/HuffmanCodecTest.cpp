@@ -1,7 +1,7 @@
 #include "HuffmanCodec.h"
 #include <gtest/gtest.h>
 
-// ²âÊÔ¿Õ×Ö·û´®
+/// @test ²âÊÔ¿Õ×Ö·û´®
 TEST(HuffmanCodecTest, EmptyString)
 {
 	HuffmanCodec codec;
@@ -10,7 +10,7 @@ TEST(HuffmanCodecTest, EmptyString)
 	EXPECT_EQ(codec.decode("", char_to_code_map), "");
 }
 
-// ²âÊÔµ¥×Ö·û×Ö·û´®
+/// @test ²âÊÔµ¥×Ö·û×Ö·û´®
 TEST(HuffmanCodecTest, SingleCharacter)
 {
     HuffmanCodec codec;
@@ -19,7 +19,7 @@ TEST(HuffmanCodecTest, SingleCharacter)
     EXPECT_EQ(codec.decode(encoded_text, char_to_code_map), "a");
 }
 
-// ²âÊÔÖØ¸´×Ö·û×Ö·û´®
+/// @test ²âÊÔÖØ¸´×Ö·û×Ö·û´®
 TEST(HuffmanCodecTest, RepeatedCharacters)
 {
     HuffmanCodec codec;
@@ -28,7 +28,7 @@ TEST(HuffmanCodecTest, RepeatedCharacters)
     EXPECT_EQ(codec.decode(encoded_text, char_to_code_map), "aaaaa");
 }
 
-// ²âÊÔ°üº¬¿Õ¸ñºÍÌØÊâ×Ö·ûµÄÒ»°ã×Ö·û´®
+/// @test ²âÊÔ°üº¬¿Õ¸ñºÍÌØÊâ×Ö·ûµÄÒ»°ã×Ö·û´®
 TEST(HuffmanCodecTest, SpecialCharacters)
 {
     HuffmanCodec codec;

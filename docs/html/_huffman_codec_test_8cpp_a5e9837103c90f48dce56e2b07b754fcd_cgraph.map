@@ -1,0 +1,42 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,168,61,195"/>
+<area shape="rect" id="Node000002" href="$class_huffman_codec.html#a51584e68192a04b65bdaac8cd10c3e6e" title="将编码压缩后的字符串解压，供用户使用" alt="" coords="109,72,267,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,165,150,105,153,110,58,170"/>
+<area shape="rect" id="Node000005" href="$class_huffman_codec.html#a569b38746d976dab1e522dc82aa9911f" title="将字符串编码压缩，该函数返回编码压缩后的字符串和字符映射表，供用户使用" alt="" coords="109,231,267,257"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="62,190,140,222,138,227,60,195"/>
+<area shape="rect" id="Node000003" href="$class_huffman_codec.html#a691d3bd53ae270e8895d53575c3658a8" title="将字符映射哈希表的key和value反向" alt="" coords="322,5,505,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="241,69,313,50,314,55,243,74"/>
+<area shape="rect" id="Node000004" href="$class_huffman_codec.html#a2d87eb1f5421bbd0968f68242d6f7f8a" title="根据字符映射表解码字符串，类内部使用" alt="" coords="322,72,505,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="267,83,306,83,306,88,267,88"/>
+<area shape="rect" id="Node000006" href="$class_huffman_codec.html#aa3a11ba60da639cc405e4e98ec7ca847" title=" " alt="" coords="317,123,509,165"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="211,228,258,202,314,175,329,169,331,174,316,180,261,207,214,232"/>
+<area shape="rect" id="Node000014" href="$class_huffman_codec.html#a8615f2bf2ae034174041b86d44335b2c" title=" " alt="" coords="321,189,505,232"/>
+<area shape="poly" id="edge15_Node000005_Node000014" title=" " alt="" coords="267,230,305,224,306,229,267,235"/>
+<area shape="rect" id="Node000015" href="$class_huffman_codec.html#a8141cafb826dcdf0f7808c4c7e5fe2fe" title=" " alt="" coords="315,256,511,299"/>
+<area shape="poly" id="edge16_Node000005_Node000015" title=" " alt="" coords="267,253,300,258,299,263,267,258"/>
+<area shape="rect" id="Node000016" href="$class_huffman_codec.html#aa182b89e4902a1a22a47d07579af3fa6" title=" " alt="" coords="322,323,505,349"/>
+<area shape="poly" id="edge17_Node000005_Node000016" title=" " alt="" coords="213,256,260,282,316,308,336,315,335,320,314,313,257,287,210,260"/>
+<area shape="rect" id="Node000017" href="$class_huffman_codec.html#aa9a3ad661c137f5ab4fb03212e546061" title=" " alt="" coords="316,373,510,416"/>
+<area shape="poly" id="edge18_Node000005_Node000017" title=" " alt="" coords="203,256,249,306,281,334,316,359,325,364,323,369,314,364,278,338,245,310,199,260"/>
+<area shape="rect" id="Node000007" href="$class_huffman_tree.html#a7cfaaa0751374e0b344b5bfd1e2d639c" title=" " alt="" coords="582,80,733,107"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="509,121,574,108,575,113,510,127"/>
+<area shape="rect" id="Node000008" href="$class_huffman_tree.html#ade345f1018c1b3c08adb50cd418875c3" title=" " alt="" coords="559,131,756,157"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="510,141,543,141,543,147,510,147"/>
+<area shape="rect" id="Node000013" href="$class_huffman_tree.html#a5dcc47a1f5b1be98dbd639949c51bbaa" title=" " alt="" coords="580,205,735,232"/>
+<area shape="poly" id="edge13_Node000006_Node000013" title=" " alt="" coords="486,163,597,198,596,203,485,169"/>
+<area shape="rect" id="Node000009" href="$class_huffman_tree_node.html#a8ebe8fe4edf5b6f071742d943d371232" title=" " alt="" coords="804,72,1018,99"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="718,128,835,100,836,105,719,133"/>
+<area shape="rect" id="Node000010" href="$class_huffman_tree_node.html#a1b77ff07724f9ff5d59c3a1fecea4382" title=" " alt="" coords="823,123,998,165"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="756,141,807,141,807,147,756,147"/>
+<area shape="rect" id="Node000012" href="$class_huffman_tree_node.html#a9b1f0ee54effb429460b6ba9ed5dd719" title=" " alt="" coords="819,189,1003,232"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="713,155,756,167,814,182,813,187,755,172,711,160"/>
+<area shape="rect" id="Node000011" href="$class_huffman_tree_node.html#a59baf13ba5eea4b50e52dd7cbc72d885" title=" " alt="" coords="1066,156,1250,199"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="999,153,1051,160,1050,166,999,158"/>
+<area shape="poly" id="edge12_Node000012_Node000011" title=" " alt="" coords="1003,196,1050,189,1051,194,1004,201"/>
+<area shape="poly" id="edge14_Node000013_Node000013" title=" " alt="" coords="617,207,609,197,614,187,631,181,658,179,687,181,702,188,700,193,686,186,657,184,632,186,618,191,614,196,621,203"/>
+<area shape="rect" id="Node000018" href="$class_huffman_tree.html#ae0b59574abdc64c8a9a6185999bc6ce5" title=" " alt="" coords="559,381,756,408"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="511,392,543,392,543,397,511,397"/>
+<area shape="rect" id="Node000019" href="$class_huffman_tree.html#a07a4f3b4d76dac218262b0db2b53d32e" title=" " alt="" coords="818,373,1004,416"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="756,392,802,392,802,397,756,397"/>
+<area shape="poly" id="edge21_Node000019_Node000019" title=" " alt="" coords="864,373,862,363,870,354,886,349,911,347,937,349,953,355,951,360,936,354,911,352,887,354,873,359,867,365,869,372"/>
+</map>

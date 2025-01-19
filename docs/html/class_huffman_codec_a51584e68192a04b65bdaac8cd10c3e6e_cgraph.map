@@ -1,0 +1,7 @@
+<map id="HuffmanCodec::decode" name="HuffmanCodec::decode">
+<area shape="rect" id="Node000001" title="将编码压缩后的字符串解压，供用户使用" alt="" coords="5,43,164,69"/>
+<area shape="rect" id="Node000002" href="$class_huffman_codec.html#a691d3bd53ae270e8895d53575c3658a8" title="将字符映射哈希表的key和value反向" alt="" coords="212,5,395,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,43,196,38,197,44,164,48"/>
+<area shape="rect" id="Node000003" href="$class_huffman_codec.html#a2d87eb1f5421bbd0968f68242d6f7f8a" title="根据字符映射表解码字符串，类内部使用" alt="" coords="212,72,395,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,64,197,68,196,74,164,69"/>
+</map>

@@ -1,10 +1,12 @@
-// 待实现：使用哈夫曼树解码
+/// @todo 待实现：使用哈夫曼树解码
+/// @bug 暂时没有
 
 #include "FrequencyCompare.h"
 #include "HuffmanCodec.h"
 #include "HuffmanTreeNode.h"
 #include <iostream>
 
+/// 程序入口点
 int main()
 {
 	std::string input_text;

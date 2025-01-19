@@ -1,0 +1,8 @@
+<map id="HuffmanCodec::generateCharToCodeMapFrom" name="HuffmanCodec::generateCharToCodeMapFrom">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,200,72"/>
+<area shape="rect" id="Node000002" href="$class_huffman_tree.html#ae0b59574abdc64c8a9a6185999bc6ce5" title=" " alt="" coords="248,37,444,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,48,232,48,232,53,200,53"/>
+<area shape="rect" id="Node000003" href="$class_huffman_tree.html#a07a4f3b4d76dac218262b0db2b53d32e" title=" " alt="" coords="492,29,677,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="445,48,476,48,476,53,445,53"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="539,29,538,19,545,10,561,5,585,3,610,5,625,11,623,16,609,10,585,8,562,10,548,15,543,21,545,28"/>
+</map>

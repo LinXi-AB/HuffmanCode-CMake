@@ -51,6 +51,11 @@ std::string HuffmanCodec::encodeText(const std::string& raw_text, const std::uno
 	return encoded_str;
 }
 
+/**
+ * @brief 将字符映射哈希表的key和value反向
+ * @param char_to_code_map 字符映射表
+ * @return key和value对调后的字符映射表
+ */
 std::unordered_map<std::string, char> HuffmanCodec::createCodeToCharMap(const std::unordered_map<char, std::string>& char_to_code_map)
 {
 	std::unordered_map<std::string, char> code_to_ch_map;
@@ -61,6 +66,12 @@ std::unordered_map<std::string, char> HuffmanCodec::createCodeToCharMap(const st
 	return code_to_ch_map;
 }
 
+/**
+ * @brief 根据字符映射表解码字符串，类内部使用
+ * @param encoded_text 编码后的字符串
+ * @param code_to_ch_map 字符映射表
+ * @return 解码后的字符串
+ */
 std::string HuffmanCodec::decodeText(const std::string& encoded_text, const std::unordered_map<std::string, char>& code_to_ch_map)
 {
 	std::string decoded_str;
@@ -78,6 +89,11 @@ std::string HuffmanCodec::decodeText(const std::string& encoded_text, const std:
 	return decoded_str;
 }
 
+/**
+ * @brief 将字符串编码压缩，该函数返回编码压缩后的字符串和字符映射表，供用户使用
+ * @param raw_text 将要被编码压缩的原始字符串
+ * @return 编码压缩后的字符串和字符映射表
+ */
 std::pair<std::string, std::unordered_map<char, std::string>> HuffmanCodec::encode(const std::string& raw_text)
 {
 	// 字符串为空则返回空pair
@@ -102,6 +118,12 @@ std::pair<std::string, std::unordered_map<char, std::string>> HuffmanCodec::enco
 	return { encoded_str, char_to_code_map };
 }
 
+/**
+ * @brief 将编码压缩后的字符串解压，供用户使用
+ * @param encoded_text 被编码压缩后的字符串
+ * @param char_to_code_map 字符映射表
+ * @return 解压后的字符串
+ */
 std::string HuffmanCodec::decode(const std::string& encoded_text, const std::unordered_map<char, std::string>& char_to_code_map)
 {
 	// Step 1: 构建解码映射表

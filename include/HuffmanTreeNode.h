@@ -11,7 +11,6 @@ private:
 public:
     explicit HuffmanTreeNode(char ch, int freq);
     ~HuffmanTreeNode();
-
     int getFrequency() const;
     HuffmanTreeNode* getLeftChild() const;
     HuffmanTreeNode* getRightChild() const;

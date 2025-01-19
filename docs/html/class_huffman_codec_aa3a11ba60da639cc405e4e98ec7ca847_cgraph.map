@@ -1,0 +1,19 @@
+<map id="HuffmanCodec::buildHuffmanTreeFrom" name="HuffmanCodec::buildHuffmanTreeFrom">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,198,99"/>
+<area shape="rect" id="Node000002" href="$class_huffman_tree.html#a7cfaaa0751374e0b344b5bfd1e2d639c" title=" " alt="" coords="269,13,419,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,55,261,41,263,46,199,60"/>
+<area shape="rect" id="Node000003" href="$class_huffman_tree.html#ade345f1018c1b3c08adb50cd418875c3" title=" " alt="" coords="246,64,442,91"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,75,230,75,230,80,198,80"/>
+<area shape="rect" id="Node000008" href="$class_huffman_tree.html#a5dcc47a1f5b1be98dbd639949c51bbaa" title=" " alt="" coords="266,139,422,165"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="174,97,284,131,282,136,173,102"/>
+<area shape="rect" id="Node000004" href="$class_huffman_tree_node.html#a8ebe8fe4edf5b6f071742d943d371232" title=" " alt="" coords="490,5,704,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="404,61,521,33,523,39,405,66"/>
+<area shape="rect" id="Node000005" href="$class_huffman_tree_node.html#a1b77ff07724f9ff5d59c3a1fecea4382" title=" " alt="" coords="510,56,685,99"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="442,75,494,75,494,80,442,80"/>
+<area shape="rect" id="Node000007" href="$class_huffman_tree_node.html#a9b1f0ee54effb429460b6ba9ed5dd719" title=" " alt="" coords="505,123,689,165"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="399,89,443,100,501,116,499,121,441,105,398,94"/>
+<area shape="rect" id="Node000006" href="$class_huffman_tree_node.html#a59baf13ba5eea4b50e52dd7cbc72d885" title=" " alt="" coords="752,89,937,132"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="686,87,737,94,737,99,685,92"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="690,129,737,122,737,128,690,134"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="303,140,296,130,301,120,317,114,344,112,373,115,388,121,386,126,372,120,344,117,318,119,304,124,301,129,307,137"/>
+</map>

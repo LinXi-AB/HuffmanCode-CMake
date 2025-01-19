@@ -1,0 +1,13 @@
+digraph "HuffmanCodec::decode"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="HuffmanCodec::decode",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="将编码压缩后的字符串解压，供用户使用"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="HuffmanCodec::createCode\lToCharMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_huffman_codec.html#a691d3bd53ae270e8895d53575c3658a8",tooltip="将字符映射哈希表的key和value反向"];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="HuffmanCodec::decodeText",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_huffman_codec.html#a2d87eb1f5421bbd0968f68242d6f7f8a",tooltip="根据字符映射表解码字符串，类内部使用"];
+}

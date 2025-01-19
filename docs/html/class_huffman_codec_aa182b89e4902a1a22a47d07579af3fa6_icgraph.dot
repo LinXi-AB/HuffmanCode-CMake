@@ -1,0 +1,21 @@
+digraph "HuffmanCodec::encodeText"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="HuffmanCodec::encodeText",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="HuffmanCodec::encode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_huffman_codec.html#a569b38746d976dab1e522dc82aa9911f",tooltip="将字符串编码压缩，该函数返回编码压缩后的字符串和字符映射表，供用户使用"];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip="程序入口点"];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="TEST",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_huffman_codec_test_8cpp.html#a3354876c0371025520cfabedcada458a",tooltip=" "];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="TEST",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_huffman_codec_test_8cpp.html#a3fecbe51d21867ea3264c70c3fba5e03",tooltip=" "];
+  Node2 -> Node6 [id="edge5_Node000002_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="TEST",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_huffman_codec_test_8cpp.html#a5e9837103c90f48dce56e2b07b754fcd",tooltip=" "];
+  Node2 -> Node7 [id="edge6_Node000002_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="TEST",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_huffman_codec_test_8cpp.html#a40def9cae1afc958a3be900ef4569651",tooltip=" "];
+}

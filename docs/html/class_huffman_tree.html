@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HuffmanCode: HuffmanTree类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">HuffmanCode<span id="projectnumber">&#160;v1.0</span>
+   </div>
+   <div id="projectbrief">The implementation of Huffman coding</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_huffman_tree.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="class_huffman_tree-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">HuffmanTree类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_huffman_tree_8h_source.html">HuffmanTree.h</a>&gt;</code></p>
+<div class="dynheader">
+HuffmanTree 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree__coll__graph.png" border="0" usemap="#a_huffman_tree_coll__map" alt="Collaboration graph"/></div>
+<map name="a_huffman_tree_coll__map" id="a_huffman_tree_coll__map">
+<area shape="rect" title=" " alt="" coords="5,309,156,528"/>
+<area shape="rect" href="class_huffman_tree_node.html" title=" " alt="" coords="8,5,154,245"/>
+<area shape="poly" title=" " alt="" coords="84,245,84,292,78,292,78,245"/>
+<area shape="poly" title=" " alt="" coords="155,96,173,106,180,125,178,138,171,147,167,144,173,136,175,126,169,109,152,100"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a49aace4d3ac5597b3a1c6fa5abcc76dd" id="r_a49aace4d3ac5597b3a1c6fa5abcc76dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49aace4d3ac5597b3a1c6fa5abcc76dd">HuffmanTree</a> ()=default</td></tr>
+<tr class="separator:a49aace4d3ac5597b3a1c6fa5abcc76dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613154ba1de2902554fc9ec71962719b" id="r_a613154ba1de2902554fc9ec71962719b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a613154ba1de2902554fc9ec71962719b">~HuffmanTree</a> ()=default</td></tr>
+<tr class="separator:a613154ba1de2902554fc9ec71962719b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82d11fc14aba4fdb2e56a07010aaafa" id="r_ab82d11fc14aba4fdb2e56a07010aaafa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab82d11fc14aba4fdb2e56a07010aaafa">deleteTree</a> (<a class="el" href="class_huffman_tree_node.html">HuffmanTreeNode</a> *<a class="el" href="#a0df5b8a9d2baefe15af04849c7a31436">root</a>)</td></tr>
+<tr class="separator:ab82d11fc14aba4fdb2e56a07010aaafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade345f1018c1b3c08adb50cd418875c3" id="r_ade345f1018c1b3c08adb50cd418875c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade345f1018c1b3c08adb50cd418875c3">initHuffmanTree</a> (<a class="el" href="_huffman_tree_8h.html#a91f8822c9098c825a9cd0f83e4f3c529">FrequencyPriorityQueue</a> huffman_queue)</td></tr>
+<tr class="separator:ade345f1018c1b3c08adb50cd418875c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b59574abdc64c8a9a6185999bc6ce5" id="r_ae0b59574abdc64c8a9a6185999bc6ce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0b59574abdc64c8a9a6185999bc6ce5">generateCodeIn</a> (std::unordered_map&lt; char, std::string &gt; &amp;code_sheet) const</td></tr>
+<tr class="separator:ae0b59574abdc64c8a9a6185999bc6ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a4f3b4d76dac218262b0db2b53d32e" id="r_a07a4f3b4d76dac218262b0db2b53d32e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07a4f3b4d76dac218262b0db2b53d32e">generateCodeStepIn</a> (const <a class="el" href="class_huffman_tree_node.html">HuffmanTreeNode</a> *<a class="el" href="#a0df5b8a9d2baefe15af04849c7a31436">root</a>, std::string current_code, std::unordered_map&lt; char, std::string &gt; &amp;code_sheet) const</td></tr>
+<tr class="separator:a07a4f3b4d76dac218262b0db2b53d32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcc47a1f5b1be98dbd639949c51bbaa" id="r_a5dcc47a1f5b1be98dbd639949c51bbaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dcc47a1f5b1be98dbd639949c51bbaa">printTree</a> (const <a class="el" href="class_huffman_tree_node.html">HuffmanTreeNode</a> *<a class="el" href="#a0df5b8a9d2baefe15af04849c7a31436">root</a>, std::string prefix, bool isLeft) const</td></tr>
+<tr class="separator:a5dcc47a1f5b1be98dbd639949c51bbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfaaa0751374e0b344b5bfd1e2d639c" id="r_a7cfaaa0751374e0b344b5bfd1e2d639c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_huffman_tree_node.html">HuffmanTreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cfaaa0751374e0b344b5bfd1e2d639c">getRoot</a> () const</td></tr>
+<tr class="separator:a7cfaaa0751374e0b344b5bfd1e2d639c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a0df5b8a9d2baefe15af04849c7a31436" id="r_a0df5b8a9d2baefe15af04849c7a31436"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_huffman_tree_node.html">HuffmanTreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0df5b8a9d2baefe15af04849c7a31436">root</a></td></tr>
+<tr class="separator:a0df5b8a9d2baefe15af04849c7a31436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_huffman_tree_8h_source.html">HuffmanTree.h</a> 第 <a class="el" href="_huffman_tree_8h_source.html#l00012">12</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a49aace4d3ac5597b3a1c6fa5abcc76dd" name="a49aace4d3ac5597b3a1c6fa5abcc76dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49aace4d3ac5597b3a1c6fa5abcc76dd">&#9670;&#160;</a></span>HuffmanTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HuffmanTree::HuffmanTree </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a613154ba1de2902554fc9ec71962719b" name="a613154ba1de2902554fc9ec71962719b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a613154ba1de2902554fc9ec71962719b">&#9670;&#160;</a></span>~HuffmanTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HuffmanTree::~HuffmanTree </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ab82d11fc14aba4fdb2e56a07010aaafa" name="ab82d11fc14aba4fdb2e56a07010aaafa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab82d11fc14aba4fdb2e56a07010aaafa">&#9670;&#160;</a></span>deleteTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HuffmanTree::deleteTree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_huffman_tree_node.html">HuffmanTreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_huffman_tree_8cpp_source.html">HuffmanTree.cpp</a> 第 <a class="el" href="_huffman_tree_8cpp_source.html#l00003">3</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree_ab82d11fc14aba4fdb2e56a07010aaafa_cgraph.png" border="0" usemap="#aclass_huffman_tree_ab82d11fc14aba4fdb2e56a07010aaafa_cgraph" alt=""/></div>
+<map name="aclass_huffman_tree_ab82d11fc14aba4fdb2e56a07010aaafa_cgraph" id="aclass_huffman_tree_ab82d11fc14aba4fdb2e56a07010aaafa_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,171,56"/>
+<area shape="poly" title=" " alt="" coords="59,30,54,21,58,11,69,5,88,3,108,5,119,12,116,16,106,10,88,8,71,10,62,15,60,20,64,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree_ab82d11fc14aba4fdb2e56a07010aaafa_icgraph.png" border="0" usemap="#aclass_huffman_tree_ab82d11fc14aba4fdb2e56a07010aaafa_icgraph" alt=""/></div>
+<map name="aclass_huffman_tree_ab82d11fc14aba4fdb2e56a07010aaafa_icgraph" id="aclass_huffman_tree_ab82d11fc14aba4fdb2e56a07010aaafa_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,171,56"/>
+<area shape="poly" title=" " alt="" coords="116,16,106,10,88,8,71,10,62,15,60,20,64,28,59,30,54,21,58,11,69,5,88,3,108,5,119,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0b59574abdc64c8a9a6185999bc6ce5" name="ae0b59574abdc64c8a9a6185999bc6ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b59574abdc64c8a9a6185999bc6ce5">&#9670;&#160;</a></span>generateCodeIn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HuffmanTree::generateCodeIn </td>
+          <td>(</td>
+          <td class="paramtype">std::unordered_map&lt; char, std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>code_sheet</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_huffman_tree_8cpp_source.html">HuffmanTree.cpp</a> 第 <a class="el" href="_huffman_tree_8cpp_source.html#l00036">36</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree_ae0b59574abdc64c8a9a6185999bc6ce5_cgraph.png" border="0" usemap="#aclass_huffman_tree_ae0b59574abdc64c8a9a6185999bc6ce5_cgraph" alt=""/></div>
+<map name="aclass_huffman_tree_ae0b59574abdc64c8a9a6185999bc6ce5_cgraph" id="aclass_huffman_tree_ae0b59574abdc64c8a9a6185999bc6ce5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,202,64"/>
+<area shape="rect" href="class_huffman_tree.html#a07a4f3b4d76dac218262b0db2b53d32e" title=" " alt="" coords="250,29,435,72"/>
+<area shape="poly" title=" " alt="" coords="202,48,234,48,234,53,202,53"/>
+<area shape="poly" title=" " alt="" coords="297,29,295,19,303,10,319,5,342,3,368,5,383,11,381,16,367,10,342,8,320,10,306,15,300,21,302,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree_ae0b59574abdc64c8a9a6185999bc6ce5_icgraph.png" border="0" usemap="#aclass_huffman_tree_ae0b59574abdc64c8a9a6185999bc6ce5_icgraph" alt=""/></div>
+<map name="aclass_huffman_tree_ae0b59574abdc64c8a9a6185999bc6ce5_icgraph" id="aclass_huffman_tree_ae0b59574abdc64c8a9a6185999bc6ce5_icgraph">
+<area shape="rect" title=" " alt="" coords="557,107,754,133"/>
+<area shape="rect" href="class_huffman_codec.html#aa9a3ad661c137f5ab4fb03212e546061" title=" " alt="" coords="315,99,509,141"/>
+<area shape="poly" title=" " alt="" coords="542,123,510,123,510,117,542,117"/>
+<area shape="rect" href="class_huffman_codec.html#a569b38746d976dab1e522dc82aa9911f" title="将字符串编码压缩，该函数返回编码压缩后的字符串和字符映射表，供用户使用" alt="" coords="109,107,267,133"/>
+<area shape="poly" title=" " alt="" coords="300,123,268,123,268,117,300,117"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="程序入口点" alt="" coords="8,5,58,32"/>
+<area shape="poly" title=" " alt="" coords="152,100,54,35,56,30,155,96"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a3354876c0371025520cfabedcada458a" title=" " alt="" coords="5,56,61,83"/>
+<area shape="poly" title=" " alt="" coords="129,104,60,81,62,76,131,99"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a3fecbe51d21867ea3264c70c3fba5e03" title=" " alt="" coords="5,107,61,133"/>
+<area shape="poly" title=" " alt="" coords="93,123,61,123,61,117,93,117"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a5e9837103c90f48dce56e2b07b754fcd" title=" " alt="" coords="5,157,61,184"/>
+<area shape="poly" title=" " alt="" coords="131,141,62,164,60,159,129,136"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a40def9cae1afc958a3be900ef4569651" title=" " alt="" coords="5,208,61,235"/>
+<area shape="poly" title=" " alt="" coords="155,144,56,210,54,205,152,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a07a4f3b4d76dac218262b0db2b53d32e" name="a07a4f3b4d76dac218262b0db2b53d32e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a4f3b4d76dac218262b0db2b53d32e">&#9670;&#160;</a></span>generateCodeStepIn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HuffmanTree::generateCodeStepIn </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_huffman_tree_node.html">HuffmanTreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>current_code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; char, std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>code_sheet</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_huffman_tree_8cpp_source.html">HuffmanTree.cpp</a> 第 <a class="el" href="_huffman_tree_8cpp_source.html#l00045">45</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree_a07a4f3b4d76dac218262b0db2b53d32e_cgraph.png" border="0" usemap="#aclass_huffman_tree_a07a4f3b4d76dac218262b0db2b53d32e_cgraph" alt=""/></div>
+<map name="aclass_huffman_tree_a07a4f3b4d76dac218262b0db2b53d32e_cgraph" id="aclass_huffman_tree_a07a4f3b4d76dac218262b0db2b53d32e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,191,72"/>
+<area shape="poly" title=" " alt="" coords="62,29,61,19,67,10,79,5,98,3,118,5,130,11,128,16,117,10,98,8,81,10,70,15,66,21,68,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree_a07a4f3b4d76dac218262b0db2b53d32e_icgraph.png" border="0" usemap="#aclass_huffman_tree_a07a4f3b4d76dac218262b0db2b53d32e_icgraph" alt=""/></div>
+<map name="aclass_huffman_tree_a07a4f3b4d76dac218262b0db2b53d32e_icgraph" id="aclass_huffman_tree_a07a4f3b4d76dac218262b0db2b53d32e_icgraph">
+<area shape="rect" title=" " alt="" coords="802,99,987,141"/>
+<area shape="poly" title=" " alt="" coords="933,86,919,80,894,77,872,79,858,84,852,90,854,98,849,99,847,89,855,80,871,74,894,72,920,74,935,81"/>
+<area shape="rect" href="class_huffman_tree.html#ae0b59574abdc64c8a9a6185999bc6ce5" title=" " alt="" coords="557,107,754,133"/>
+<area shape="poly" title=" " alt="" coords="786,123,754,123,754,117,786,117"/>
+<area shape="rect" href="class_huffman_codec.html#aa9a3ad661c137f5ab4fb03212e546061" title=" " alt="" coords="315,99,509,141"/>
+<area shape="poly" title=" " alt="" coords="542,123,510,123,510,117,542,117"/>
+<area shape="rect" href="class_huffman_codec.html#a569b38746d976dab1e522dc82aa9911f" title="将字符串编码压缩，该函数返回编码压缩后的字符串和字符映射表，供用户使用" alt="" coords="109,107,267,133"/>
+<area shape="poly" title=" " alt="" coords="300,123,268,123,268,117,300,117"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="程序入口点" alt="" coords="8,5,58,32"/>
+<area shape="poly" title=" " alt="" coords="152,100,54,35,56,30,155,96"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a3354876c0371025520cfabedcada458a" title=" " alt="" coords="5,56,61,83"/>
+<area shape="poly" title=" " alt="" coords="129,104,60,81,62,76,131,99"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a3fecbe51d21867ea3264c70c3fba5e03" title=" " alt="" coords="5,107,61,133"/>
+<area shape="poly" title=" " alt="" coords="93,123,61,123,61,117,93,117"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a5e9837103c90f48dce56e2b07b754fcd" title=" " alt="" coords="5,157,61,184"/>
+<area shape="poly" title=" " alt="" coords="131,141,62,164,60,159,129,136"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a40def9cae1afc958a3be900ef4569651" title=" " alt="" coords="5,208,61,235"/>
+<area shape="poly" title=" " alt="" coords="155,144,56,210,54,205,152,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7cfaaa0751374e0b344b5bfd1e2d639c" name="a7cfaaa0751374e0b344b5bfd1e2d639c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cfaaa0751374e0b344b5bfd1e2d639c">&#9670;&#160;</a></span>getRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_huffman_tree_node.html">HuffmanTreeNode</a> * HuffmanTree::getRoot </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_huffman_tree_8cpp_source.html">HuffmanTree.cpp</a> 第 <a class="el" href="_huffman_tree_8cpp_source.html#l00083">83</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree_a7cfaaa0751374e0b344b5bfd1e2d639c_icgraph.png" border="0" usemap="#aclass_huffman_tree_a7cfaaa0751374e0b344b5bfd1e2d639c_icgraph" alt=""/></div>
+<map name="aclass_huffman_tree_a7cfaaa0751374e0b344b5bfd1e2d639c_icgraph" id="aclass_huffman_tree_a7cfaaa0751374e0b344b5bfd1e2d639c_icgraph">
+<area shape="rect" title=" " alt="" coords="555,107,706,133"/>
+<area shape="rect" href="class_huffman_codec.html#aa3a11ba60da639cc405e4e98ec7ca847" title=" " alt="" coords="315,99,507,141"/>
+<area shape="poly" title=" " alt="" coords="540,123,508,123,508,117,540,117"/>
+<area shape="rect" href="class_huffman_codec.html#a569b38746d976dab1e522dc82aa9911f" title="将字符串编码压缩，该函数返回编码压缩后的字符串和字符映射表，供用户使用" alt="" coords="109,107,267,133"/>
+<area shape="poly" title=" " alt="" coords="300,123,267,123,267,117,300,117"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="程序入口点" alt="" coords="8,5,58,32"/>
+<area shape="poly" title=" " alt="" coords="152,100,54,35,56,30,155,96"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a3354876c0371025520cfabedcada458a" title=" " alt="" coords="5,56,61,83"/>
+<area shape="poly" title=" " alt="" coords="129,104,60,81,62,76,131,99"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a3fecbe51d21867ea3264c70c3fba5e03" title=" " alt="" coords="5,107,61,133"/>
+<area shape="poly" title=" " alt="" coords="93,123,61,123,61,117,93,117"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a5e9837103c90f48dce56e2b07b754fcd" title=" " alt="" coords="5,157,61,184"/>
+<area shape="poly" title=" " alt="" coords="131,141,62,164,60,159,129,136"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a40def9cae1afc958a3be900ef4569651" title=" " alt="" coords="5,208,61,235"/>
+<area shape="poly" title=" " alt="" coords="155,144,56,210,54,205,152,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ade345f1018c1b3c08adb50cd418875c3" name="ade345f1018c1b3c08adb50cd418875c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade345f1018c1b3c08adb50cd418875c3">&#9670;&#160;</a></span>initHuffmanTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HuffmanTree::initHuffmanTree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_huffman_tree_8h.html#a91f8822c9098c825a9cd0f83e4f3c529">FrequencyPriorityQueue</a></td>          <td class="paramname"><span class="paramname"><em>huffman_queue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_huffman_tree_8cpp_source.html">HuffmanTree.cpp</a> 第 <a class="el" href="_huffman_tree_8cpp_source.html#l00013">13</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree_ade345f1018c1b3c08adb50cd418875c3_cgraph.png" border="0" usemap="#aclass_huffman_tree_ade345f1018c1b3c08adb50cd418875c3_cgraph" alt=""/></div>
+<map name="aclass_huffman_tree_ade345f1018c1b3c08adb50cd418875c3_cgraph" id="aclass_huffman_tree_ade345f1018c1b3c08adb50cd418875c3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,64,202,91"/>
+<area shape="rect" href="class_huffman_tree_node.html#a8ebe8fe4edf5b6f071742d943d371232" title=" " alt="" coords="250,5,464,32"/>
+<area shape="poly" title=" " alt="" coords="164,61,281,33,282,39,165,66"/>
+<area shape="rect" href="class_huffman_tree_node.html#a1b77ff07724f9ff5d59c3a1fecea4382" title=" " alt="" coords="269,56,444,99"/>
+<area shape="poly" title=" " alt="" coords="202,75,253,75,253,80,202,80"/>
+<area shape="rect" href="class_huffman_tree_node.html#a9b1f0ee54effb429460b6ba9ed5dd719" title=" " alt="" coords="265,123,449,165"/>
+<area shape="poly" title=" " alt="" coords="158,89,259,116,258,121,157,94"/>
+<area shape="rect" href="class_huffman_tree_node.html#a59baf13ba5eea4b50e52dd7cbc72d885" title=" " alt="" coords="512,89,696,132"/>
+<area shape="poly" title=" " alt="" coords="445,87,497,94,496,99,445,92"/>
+<area shape="poly" title=" " alt="" coords="449,129,496,122,497,128,450,134"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree_ade345f1018c1b3c08adb50cd418875c3_icgraph.png" border="0" usemap="#aclass_huffman_tree_ade345f1018c1b3c08adb50cd418875c3_icgraph" alt=""/></div>
+<map name="aclass_huffman_tree_ade345f1018c1b3c08adb50cd418875c3_icgraph" id="aclass_huffman_tree_ade345f1018c1b3c08adb50cd418875c3_icgraph">
+<area shape="rect" title=" " alt="" coords="555,107,752,133"/>
+<area shape="rect" href="class_huffman_codec.html#aa3a11ba60da639cc405e4e98ec7ca847" title=" " alt="" coords="315,99,507,141"/>
+<area shape="poly" title=" " alt="" coords="539,123,508,123,508,117,539,117"/>
+<area shape="rect" href="class_huffman_codec.html#a569b38746d976dab1e522dc82aa9911f" title="将字符串编码压缩，该函数返回编码压缩后的字符串和字符映射表，供用户使用" alt="" coords="109,107,267,133"/>
+<area shape="poly" title=" " alt="" coords="300,123,267,123,267,117,300,117"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="程序入口点" alt="" coords="8,5,58,32"/>
+<area shape="poly" title=" " alt="" coords="152,100,54,35,56,30,155,96"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a3354876c0371025520cfabedcada458a" title=" " alt="" coords="5,56,61,83"/>
+<area shape="poly" title=" " alt="" coords="129,104,60,81,62,76,131,99"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a3fecbe51d21867ea3264c70c3fba5e03" title=" " alt="" coords="5,107,61,133"/>
+<area shape="poly" title=" " alt="" coords="93,123,61,123,61,117,93,117"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a5e9837103c90f48dce56e2b07b754fcd" title=" " alt="" coords="5,157,61,184"/>
+<area shape="poly" title=" " alt="" coords="131,141,62,164,60,159,129,136"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a40def9cae1afc958a3be900ef4569651" title=" " alt="" coords="5,208,61,235"/>
+<area shape="poly" title=" " alt="" coords="155,144,56,210,54,205,152,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5dcc47a1f5b1be98dbd639949c51bbaa" name="a5dcc47a1f5b1be98dbd639949c51bbaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcc47a1f5b1be98dbd639949c51bbaa">&#9670;&#160;</a></span>printTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HuffmanTree::printTree </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_huffman_tree_node.html">HuffmanTreeNode</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isLeft</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_huffman_tree_8cpp_source.html">HuffmanTree.cpp</a> 第 <a class="el" href="_huffman_tree_8cpp_source.html#l00060">60</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree_a5dcc47a1f5b1be98dbd639949c51bbaa_cgraph.png" border="0" usemap="#aclass_huffman_tree_a5dcc47a1f5b1be98dbd639949c51bbaa_cgraph" alt=""/></div>
+<map name="aclass_huffman_tree_a5dcc47a1f5b1be98dbd639949c51bbaa_cgraph" id="aclass_huffman_tree_a5dcc47a1f5b1be98dbd639949c51bbaa_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,161,56"/>
+<area shape="poly" title=" " alt="" coords="56,30,51,21,55,11,65,5,83,3,102,5,112,12,109,16,100,10,83,8,67,10,59,15,57,20,61,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_huffman_tree_a5dcc47a1f5b1be98dbd639949c51bbaa_icgraph.png" border="0" usemap="#aclass_huffman_tree_a5dcc47a1f5b1be98dbd639949c51bbaa_icgraph" alt=""/></div>
+<map name="aclass_huffman_tree_a5dcc47a1f5b1be98dbd639949c51bbaa_icgraph" id="aclass_huffman_tree_a5dcc47a1f5b1be98dbd639949c51bbaa_icgraph">
+<area shape="rect" title=" " alt="" coords="555,107,711,133"/>
+<area shape="poly" title=" " alt="" coords="671,94,658,88,633,85,610,87,597,92,594,97,600,105,596,108,589,98,593,88,609,82,633,80,659,83,673,89"/>
+<area shape="rect" href="class_huffman_codec.html#aa3a11ba60da639cc405e4e98ec7ca847" title=" " alt="" coords="315,99,507,141"/>
+<area shape="poly" title=" " alt="" coords="540,123,508,123,508,117,540,117"/>
+<area shape="rect" href="class_huffman_codec.html#a569b38746d976dab1e522dc82aa9911f" title="将字符串编码压缩，该函数返回编码压缩后的字符串和字符映射表，供用户使用" alt="" coords="109,107,267,133"/>
+<area shape="poly" title=" " alt="" coords="300,123,267,123,267,117,300,117"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="程序入口点" alt="" coords="8,5,58,32"/>
+<area shape="poly" title=" " alt="" coords="152,100,54,35,56,30,155,96"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a3354876c0371025520cfabedcada458a" title=" " alt="" coords="5,56,61,83"/>
+<area shape="poly" title=" " alt="" coords="129,104,60,81,62,76,131,99"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a3fecbe51d21867ea3264c70c3fba5e03" title=" " alt="" coords="5,107,61,133"/>
+<area shape="poly" title=" " alt="" coords="93,123,61,123,61,117,93,117"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a5e9837103c90f48dce56e2b07b754fcd" title=" " alt="" coords="5,157,61,184"/>
+<area shape="poly" title=" " alt="" coords="131,141,62,164,60,159,129,136"/>
+<area shape="rect" href="_huffman_codec_test_8cpp.html#a40def9cae1afc958a3be900ef4569651" title=" " alt="" coords="5,208,61,235"/>
+<area shape="poly" title=" " alt="" coords="155,144,56,210,54,205,152,140"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a0df5b8a9d2baefe15af04849c7a31436" name="a0df5b8a9d2baefe15af04849c7a31436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df5b8a9d2baefe15af04849c7a31436">&#9670;&#160;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_huffman_tree_node.html">HuffmanTreeNode</a>* HuffmanTree::root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_huffman_tree_8h_source.html">HuffmanTree.h</a> 第 <a class="el" href="_huffman_tree_8h_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_huffman_tree_8h_source.html">HuffmanTree.h</a></li>
+<li>src/<a class="el" href="_huffman_tree_8cpp_source.html">HuffmanTree.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_huffman_tree.html">HuffmanTree</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
+  </ul>
+</div>
+</body>
+</html>

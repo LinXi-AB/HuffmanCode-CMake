@@ -1,0 +1,13 @@
+<map id="include/HuffmanTree.h" name="include/HuffmanTree.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="244,5,396,32"/>
+<area shape="rect" id="Node000002" href="$_huffman_codec_8h.html" title=" " alt="" coords="150,80,314,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,44,249,82,246,78,292,40"/>
+<area shape="rect" id="Node000006" href="$_huffman_tree_8cpp.html" title=" " alt="" coords="338,80,481,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="349,40,396,78,393,82,346,44"/>
+<area shape="rect" id="Node000003" href="$_huffman_codec_8cpp.html" title=" " alt="" coords="5,155,161,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,116,110,156,108,152,191,111"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="184,155,280,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="235,122,235,154,230,154,230,122"/>
+<area shape="rect" id="Node000005" href="$_huffman_codec_test_8cpp.html" title=" " alt="" coords="305,155,496,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="277,111,372,152,370,156,274,116"/>
+</map>
