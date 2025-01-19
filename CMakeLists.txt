@@ -1,20 +1,28 @@
-﻿# CMake最低版本
-cmake_minimum_required(VERSION 3.8)
+﻿cmake_minimum_required(VERSION 3.14)
 
-# 项目名称
 project(HuffmanCode)
 
-# C++标准使用20
+## C++20
 set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# 指定可执行文件生成路径
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
+## 没有这两行代码MSVC会报错
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MTd")
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
 
-# 添加头文件目录
-INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/include)
+## GoogleTest单元测试
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  GIT_REPOSITORY https://github.com/google/googletest.git
+  GIT_TAG release-1.11.0
+)
+FetchContent_MakeAvailable(googletest)
+enable_testing()
 
-# 添加cpp文件
-file(GLOB SOURCES ${CMAKE_SOURCE_DIR}/src/*.cpp)
+## 全局头文件目录
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
-# 生成exe文件
-add_executable(HuffmanCode ${SOURCES})
+## 添加并构建子目录
+add_subdirectory(src)
+add_subdirectory(tests)
